@@ -1,12 +1,21 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2025 Ain Jeong All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Ain Jeong
+// Created on: Mar 2025
 // This file contains the JS functions for index.html
 
 /**
- * Displays an alert with the message "Hello, World!"
+ * Do math
  */
-function myButtonClicked() {
-  alert("Hello, World!")
+function enterClicked() {
+  // input
+  const triangleHeight = parseInt(document.getElementById("height").value)
+  const triangleBase = parseInt(document.getElementById("base").value)
+
+  // calculate area
+  const area = (triangleHeight * triangleBase) / 2
+
+  // output
+  document.getElementById("math").innerHTML =
+    "Your right angle triangle's area is: " + area + "cm²"
 }

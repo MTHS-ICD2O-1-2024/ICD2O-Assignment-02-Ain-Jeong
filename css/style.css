@@ -1,4 +1,50 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: Ain Jeong
+* Created on: Mar 2025
 * This file contains the CSS for index.html
 */
+
+.mdl-layout__header-row {
+  justify-content: center;
+  padding: 0;
+}
+
+.mdl-layout__content {
+  padding-left: 15pt;
+  padding-right: 15pt;
+  padding-top: 15pt;
+}
+
+.mdl-textfield__error {
+  color: rgb(255 255 255);
+}
+
+.page-content {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+}
+
+.page-content-answer {
+  color: rgb(255 255 255);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+img {
+  height: auto;
+  width: 250px;
+  float: right;
+  border: solid;
+  border-width: 0.2rem;
+  border-color: rgb(29 60 63);
+  border-radius: 1rem;
+}
+
+body {
+  background-color: rgb(161 222 230);
+}
+
+header {
+  font-size: larger;
+  color: rgb(255 255 255);
+}
