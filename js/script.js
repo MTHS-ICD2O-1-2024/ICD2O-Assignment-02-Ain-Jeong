@@ -13,11 +13,18 @@ function calculateVolumeOfCuboid() {
   const cuboidWidth = parseFloat(document.getElementById("width").value)
   const cuboidHeight = parseFloat(document.getElementById("height").value)
 
-
   // calculate volume
   const volume = cuboidLength * cuboidWidth * cuboidHeight
 
   // output
   document.getElementById("volume-of-cuboid").innerHTML =
-    "If your cuboid has the length of " + cuboidLength + " cm, the width of " + cuboidWidth + " cm, and the height of " + cuboidHeight + " cm, the volume of your cuboid is: " + volume + "cm³"
+    "If your cuboid has the length of " +
+    cuboidLength +
+    " cm, the width of " +
+    cuboidWidth +
+    " cm, and the height of " +
+    cuboidHeight +
+    " cm, the volume of your cuboid is: " +
+    volume +
+    " cm³"
 }
