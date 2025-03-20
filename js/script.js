@@ -17,5 +17,5 @@ function enterClicked() {
 
   // output
   document.getElementById("math").innerHTML =
-    "Your right angle triangle's area is: " + area + "cm²"
+    "Your right triangle's area is: " + area + "cm²"
 }
