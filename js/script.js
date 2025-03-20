@@ -7,7 +7,7 @@
 /**
  * Do math
  */
-function enterClicked() {
+function calculateVolumeOfCuboid() {
   // input
   const cuboidLength = parseFloat(document.getElementById("length").value)
   const cuboidWidth = parseFloat(document.getElementById("width").value)
