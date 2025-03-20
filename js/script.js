@@ -17,5 +17,5 @@ function enterClicked() {
 
   // output
   document.getElementById("math").innerHTML =
-    "Your right triangle's area is: " + area + "cm²"
+    "If your right triangle has the height of " + triangleHeight + " cm and the base of " + triangleBase + " cm, your right triangle's area is: " + area + "cm²"
 }
