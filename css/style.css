@@ -32,7 +32,7 @@
 
 img {
   height: auto;
-  width: 250px;
+  width: 300px;
   float: right;
   border: solid;
   border-width: 0.2rem;
@@ -41,7 +41,7 @@ img {
 }
 
 body {
-  background-color: rgb(161 222 230);
+  background-color: rgb(139 212 221);
 }
 
 header {

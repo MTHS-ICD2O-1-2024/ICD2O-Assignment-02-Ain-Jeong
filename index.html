@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="The Area of Right Triangle Calculation, with JS" />
+  <meta name="description" content="The Volume of Cuboid Calculation, with JS" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Ain Jeong" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>The Area of Right Triangle Calculation, with JS</title>
+  <title>The Volume of Cuboid Calculation, with JS</title>
 </head>
 
 <body>
@@ -23,28 +23,35 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">The Area of Right Triangle Calculation, with JS</span>
+        <span class="mdl-layout-title">The Volume of Cuboid Calculation, with JS</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/right-triangle.png" alt="right triangle image" />
+        <img src="./images/volume-of-cuboid.png" alt="volume of cuboid image" />
       </div>
       <div class="page-content">Please enter the following:</div>
       <br />
       <form>
-        <!-- Numeric Textfield of Height-->
+        <!-- Numeric Textfield of Length-->
+        <p>Length (cm)</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length" />
+          <label class="mdl-textfield__label" for="length">Length of your cuboid here ...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <!-- Numeric Textfield of Width-->
+        <p>Width (cm)</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="width" />
+          <label class="mdl-textfield__label" for="width">Width of your cuboid here ...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+                <!-- Numeric Textfield of Height-->
         <p>Height (cm)</p>
         <div class="mdl-textfield mdl-js-textfield">
           <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height" />
-          <label class="mdl-textfield__label" for="height">Height of your right triangle here ...</label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        <!-- Numeric Textfield of Base-->
-        <p>Base (cm)</p>
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="base" />
-          <label class="mdl-textfield__label" for="base">Base of your right triangle here ...</label>
+          <label class="mdl-textfield__label" for="height">Height of your cuboid here ...</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br />
@@ -56,7 +63,7 @@
       </form>
       <br />
       <div class="page-content">
-        <div id="math"></div>
+        <div id="volume-of-cuboid"></div>
       </div>
     </main>
   </div>

@@ -9,13 +9,15 @@
  */
 function enterClicked() {
   // input
-  const triangleHeight = parseInt(document.getElementById("height").value)
-  const triangleBase = parseInt(document.getElementById("base").value)
+  const cuboidLength = parseFloat(document.getElementById("length").value)
+  const cuboidWidth = parseFloat(document.getElementById("width").value)
+  const cuboidHeight = parseFloat(document.getElementById("height").value)
 
-  // calculate area
-  const area = (triangleHeight * triangleBase) / 2
+
+  // calculate volume
+  const volume = cuboidLength * cuboidWidth * cuboidHeight
 
   // output
-  document.getElementById("math").innerHTML =
-    "If your right triangle has the height of " + triangleHeight + " cm and the base of " + triangleBase + " cm, your right triangle's area is: " + area + "cm²"
+  document.getElementById("volume-of-cuboid").innerHTML =
+    "If your cuboid has the length of " + cuboidLength + " cm, the width of " + cuboidWidth + " cm, and the height of " + cuboidHeight + " cm, the volume of your cuboid is: " + volume + "cm³"
 }
