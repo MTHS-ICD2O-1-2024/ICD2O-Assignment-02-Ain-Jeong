@@ -25,6 +25,6 @@ function calculateVolumeOfCuboid() {
     " cm, and the height of " +
     cuboidHeight +
     " cm, the volume of your cuboid is: " +
-    volume.toFixed(2) + // rounded to 2 decimal places
+    volume.toFixed(2) + 
     " cm³"
 }
