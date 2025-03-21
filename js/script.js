@@ -16,7 +16,7 @@ function calculateVolumeOfCuboid() {
   // calculate volume
   const volume = cuboidLength * cuboidWidth * cuboidHeight
 
-  // output
+  // output with volume rounded to 2 decimal places
   document.getElementById("volume-of-cuboid").innerHTML =
     "If your cuboid has the length of " +
     cuboidLength +
@@ -25,6 +25,6 @@ function calculateVolumeOfCuboid() {
     " cm, and the height of " +
     cuboidHeight +
     " cm, the volume of your cuboid is: " +
-    volume +
+    volume.toFixed(2) + // rounded to 2 decimal places
     " cm³"
 }
